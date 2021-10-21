@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    //每次执行都不启动一个新的控制台
+    "presentation": {
+        "reveal": "always",
+        "panel": "shared", //"new",
+        "echo": true
+    },
+    //设置环境变量
+    "options": {
+        "env": {
+            //"Path": "%Path%;D:\\ProgramFiles\\MinGW64\\bin",
+            "LOCAL_SRC_HOME": "${workspaceRoot}"
+        }
+    },
+    //任务列表
+    "tasks": [
+        {
+            "label": "Compile",
+            "command": "make",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
